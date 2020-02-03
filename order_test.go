@@ -1,15 +1,14 @@
 package order
 
 import (
+	"fmt"
 	"testing"
 )
 
 func TestOrder(t *testing.T) {
-	s := []string{"dotisff", "我是第123g123", "lkjasd", "spoi1eq", "第12讲但是", "第讲asd12", "萨拉丁就卡死", "qweq24s", "第20讲", "asdads25"}
-	t.Log(Strings(s))
-
-	// for _, v := range s {
-	// 	fmt.Println(FdNum(v))
-	// }
-
+	s := []string{"usel ess2", "第1讲它的1的位置在1", "useless1",
+		"uu1它的1的位置是2", "第1 2讲中途有空格会忽略也视为连续", "第10讲后面多余的12忽略掉", "无关元素", "关元素", "元素",
+		"第111讲", " 10开始"}
+	Strings(s)
+	fmt.Println(s)
 }
